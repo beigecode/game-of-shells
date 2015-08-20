@@ -3,6 +3,19 @@
 
   $(document).ready(function() {
     play();
+
+    $('button.shuffle').click(function() {
+      $(this).text('Shuffling...');
+      setTimeout(function(){
+         play();
+      }, 2000);
+    });
+
+
+    $('.cup').click(function(e) {
+      check_win(e);
+    })
+
   })
 
   var shuffle_it = function (e) {
@@ -35,18 +48,6 @@
       alert("You Lose!");
     }
   }
-
-  $('button.shuffle').click(function() {
-    $(this).text('Shuffling...');
-    setTimeout(function(){
-       play();
-    }, 2000);
-  });
-
-  $('.cup').click(function(e) {
-    check_win(e);
-  })
-
 
 
 }());
