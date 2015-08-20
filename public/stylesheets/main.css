@@ -3,7 +3,7 @@
 
 .container { display: inline-block; }
 .cup {
-  background-image: url('public/images/cup.png');
+  background-image: url('../images/cup.png');
   height: 297px;
   width: 198px;
   display: inline-block;
